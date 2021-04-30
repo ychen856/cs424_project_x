@@ -14,7 +14,6 @@ library(usmap)
 library(DT)
 library(shinycssloaders)
 source("global.R")
-source("utility.R")
 
 
 # Define server logic required to draw a histogram
@@ -25,7 +24,7 @@ function(input, output, session) {
   #energy source input check box
   observe({
     mapData <- power_plant_df
-    print("fresh")
+    
     if("Select All" %in% input$energySourceInput)  {
       updateCheckboxGroupInput(session,"energySourceInput", selected=c("Select All", energySource_dist))
     }
