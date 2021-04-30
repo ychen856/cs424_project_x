@@ -29,7 +29,7 @@ ui <- fluidPage(class = "p-0 m-0",
         tags$nav(class = "head shadow p-0 m-0 pl-0",
             tags$ul(class = "title p-0 mr-auto mt-0 mb-0",
                 tags$li(
-                    tags$p("CS424 Project 2")
+                    tags$p("CS424 Project X")
                 )
             ),
             tags$ul(class = "name p-0",
@@ -39,7 +39,7 @@ ui <- fluidPage(class = "p-0 m-0",
         tags$div(class = "p-0",
             navbarPage("",
                 #energy plants location start
-                tabPanel("Energy Plants in IL 2018", class = "p-0",
+                tabPanel("Global Power Plants", class = "p-0",
                     mainPanel(class = "panel p-0",
                         fluidRow(
                             column(12, class = "p-0",
@@ -49,7 +49,7 @@ ui <- fluidPage(class = "p-0 m-0",
                                         tags$div(
                                             column(7,
                                                 tags$div(class = "title",
-                                                    tags$span("Energy Plants in IL 2018")
+                                                    tags$span("Power Plants")
                                                 )
                                             ),
                                             column(1,
@@ -126,17 +126,11 @@ ui <- fluidPage(class = "p-0 m-0",
                                             ),
                                             tags$div(
                                                 tags$span(class = "cust-text-md", "Data Source: "),
-                                                tags$a(href = "https://www.epa.gov/egrid/download-data", "https://www.epa.gov/egrid/download-data"),
-                                                tags$br(),
-                                                tags$span(" 2018: eGRID2018v2 Data File (XLSX), eGRID2000_plant.xls file and its EGRDPLNT00 tab"),
-                                                tags$br(), 
-                                                tags$span(" 2010: Download eGRID historical files (1996-2016) (ZIP), eGRID2010_Data.xls file/EGRDPLNT10 tab"),
-                                                tags$br(), 
-                                                tags$span(" 2000: Download eGRID historical files (1996-2016) (ZIP), eGRID2000_plant.xls file/EGRDPLNT00 tab")
+                                                tags$a(href = "https://datasets.wri.org/dataset/globalpowerplantdatabase", "https://datasets.wri.org/dataset/globalpowerplantdatabase"),
                                             ),
                                             tags$div(
                                                 tags$span(class = "cust-text-md", "Git Repository: "),
-                                                tags$a(href = "https://github.com/ychen856/cs424_project_2.git", "https://github.com/ychen856/cs424_project_2.git")
+                                                tags$a(href = "https://github.com/ychen856/cs424_project_x.git", "https://github.com/ychen856/cs424_project_x.git")
                                             )
                                         ),
                                     )
